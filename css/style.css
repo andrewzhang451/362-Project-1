@@ -1,13 +1,4 @@
-@media all and (max-width: 600px) {
-    img {
-    width: 75%;
-}
-}   
-@media (orientation: landscape) and (min-width: 500px){
-    img {
-        width: 100%;
-    }
-}
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Beau+Rivage&family=Exo:ital,wght@1,500&family=Send+Flowers&display=swap');
 
 body {
     margin: 0;
@@ -27,20 +18,22 @@ body {
 }
 
 #content {
-    color:rgb(0, 0, 0);
+    color:rgba(0, 217, 255, 0.733);
     text-align: center;
-    font-family: cursive;
+    font-family: 'Ane Odia';
+    font-size: 50px;
+    
 }
 
 #register {
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-family:fantasy
 }
 
 .box {
     position: relative;
     top: 50%;
-    left: 110%;
+    left: 120%;
     width: 300px;
     height: 400px;
     padding: 40px;
@@ -81,7 +74,7 @@ p {
     margin-bottom: 12px;
     vertical-align: middle;
 }
-  label {
+label {
     margin-bottom: 7px;
     vertical-align: middle;
 }
@@ -122,4 +115,15 @@ button {
 	p {
 	padding-top: 10px;
 	}
+}
+
+@media all and (max-width: 600px) {
+    img {
+    width: 75%;
+}
+}   
+@media (orientation: landscape) and (min-width: 500px){
+    img {
+        width: 100%;
+    }
 }
