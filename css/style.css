@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Beau+Rivage&family=Exo:ital,wght@1,500&family=Send+Flowers&display=swap');
 
+html {font-size: 100%;} /*16px*/
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +11,9 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.75;
 }
 
 .webTitle {
@@ -91,39 +97,45 @@ button {
 }
 
 
-@media (min-width: 1000px) {
-	html{
-	height: 100%
+@media (min-width: 650px) {
+	html {
+		height: 100%
 	}
-	body{
-	height: 100%
+	body {
+		height: 100%;
 	}
-	.main{
-  	flex-direction: row;
-	height: calc(100% - 50px);
-	padding-right: 16%;
-	padding-left: 10%;
+	.main {
+		flex-direction: row;
+		height: calc(100% - 50px);
 	}
 	.info {
-	flex: 1 30px;
-    height: auto;	
+		flex: 30px;
+		height: auto;
 	}
-    .box{
-    flex: 1 30px;
-    height: auto;
-    }
 	p {
-	padding-top: 10px;
+		padding-top: 10px;
+	}
+}
+@media (min-width: 1000px) {
+	html {
+		height: 100%
+	}
+	body {
+		height: 100%;
+	}
+	.main {
+		flex-direction: row;
+		height: calc(100% - 50px);
+		padding-right: 15%;
+		padding-left: 10%;
+	}
+	.info {
+		flex: 30px;
+		height: auto;
+	}
+	p {
+		padding-top: 10px;
 	}
 }
 
-@media all and (max-width: 600px) {
-    img {
-    width: 75%;
-}
-}   
-@media (orientation: landscape) and (min-width: 500px){
-    img {
-        width: 100%;
-    }
-}
+  
