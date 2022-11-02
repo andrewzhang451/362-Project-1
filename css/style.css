@@ -2,6 +2,19 @@
 
 html {font-size: 100%;} /*16px*/
 
+:root {
+    --step-up-two-half: 3.330em; /* Max Header Size */
+    --step-up-two: 2.620em;
+    --step-up-one-half: 2.058em;
+    --step-up-one: 1.618em;
+    --step-up-half: 1.272em; /* Current Baseline*/
+    /* Origin Baseline: 1em */
+    --step-down-half: 0.786em;
+    --step-down-one: 0.618em;
+    --step-down-one-half: 0.486em;
+    --step-down-two: 0.382em;
+    --step-down-two-half: 0.300em;
+}
 
 body {
     margin: 0;
@@ -20,15 +33,14 @@ body {
     color:rgb(0, 0, 0);
     text-align: center;
     font-family: cursive;
-    font-size: 150px;
+    font-size: var(--step-up-two-half); /* APPLY SCALING EG.2 */
 }
 
 #content {
     color:rgba(0, 217, 255, 0.733);
     text-align: center;
     font-family: 'Ane Odia';
-    font-size: 50px;
-    
+    font-size: var(--step-up-half);  /* APPLY SCALING EG.1 */
 }
 
 #register {
