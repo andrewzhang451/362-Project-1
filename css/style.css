@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Odia&family=Beau+Rivage&family=Exo:ital,wght@1,500&family=Send+Flowers&display=swap');
+html {
+    font-size: 100%;
+}
 
-html {font-size: 100%;} /*16px*/
+
+/*16px*/
 
 :root {
-    --step-up-two-half: 3.330em; /* Max Header Size */
+    --step-up-two-half: 3.330em;
+    /* Max Header Size */
     --step-up-two: 2.620em;
     --step-up-one-half: 2.058em;
     --step-up-one: 1.618em;
-    --step-up-half: 1.272em; /* Current Baseline*/
+    --step-up-half: 1.272em;
+    /* Current Baseline*/
     /* Origin Baseline: 1em */
     --step-down-half: 0.786em;
     --step-down-one: 0.618em;
@@ -30,22 +36,24 @@ body {
 }
 
 .webTitle {
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: cursive;
-    font-size: var(--step-up-two-half); /* APPLY SCALING EG.2 */
+    font-size: var(--step-up-two-half);
+    /* APPLY SCALING EG.2 */
 }
 
 #content {
-    color:rgba(0, 217, 255, 0.733);
+    color: rgba(0, 217, 255, 0.733);
     text-align: center;
     font-family: 'Ane Odia';
-    font-size: var(--step-up-half);  /* APPLY SCALING EG.1 */
+    font-size: var(--step-up-half);
+    /* APPLY SCALING EG.1 */
 }
 
 #register {
-    color:rgb(255, 255, 255);
-    font-family:fantasy
+    color: rgb(255, 255, 255);
+    font-family: fantasy
 }
 
 .box {
@@ -57,33 +65,39 @@ body {
     padding: 40px;
     background: rgb(116, 57, 3);
     margin: 15%;
-    border:rgb(255, 255, 255);
+    border: rgb(255, 255, 255);
     border-radius: 10px;
     opacity: 70%;
 }
 
-form { 
+form {
     margin: auto;
     position: absolute;
 }
 
-div{
+div {
     display: block;
-    font-family:'Times New Roman', Times, serif!important;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 
 p {
     text-align: center;
-    font-size:40px;
+    font-size: 40px;
 }
 
-.emailInput, .phoneInput, .firstNameInput, .lastNameInput {
+.emailInput,
+.phoneInput,
+.firstNameInput,
+.lastNameInput {
     vertical-align: middle;
     margin: 10px;
     padding: 5px;
 }
 
-#emailInput, #phoneInput, #firstNameInput, #lastNameInput {
+#emailInput,
+#phoneInput,
+#firstNameInput,
+#lastNameInput {
     height: 30px;
     width: 250px;
 }
@@ -92,11 +106,11 @@ p {
     margin-bottom: 12px;
     vertical-align: middle;
 }
+
 label {
     margin-bottom: 7px;
     vertical-align: middle;
 }
-
 
 button {
     position: relative;
@@ -108,46 +122,44 @@ button {
     left: 70px;
 }
 
-
 @media (min-width: 650px) {
-	html {
-		height: 100%
-	}
-	body {
-		height: 100%;
-	}
-	.main {
-		flex-direction: row;
-		height: calc(100% - 50px);
-	}
-	.info {
-		flex: 30px;
-		height: auto;
-	}
-	p {
-		padding-top: 10px;
-	}
-}
-@media (min-width: 1000px) {
-	html {
-		height: 100%
-	}
-	body {
-		height: 100%;
-	}
-	.main {
-		flex-direction: row;
-		height: calc(100% - 50px);
-		padding-right: 15%;
-		padding-left: 10%;
-	}
-	.info {
-		flex: 30px;
-		height: auto;
-	}
-	p {
-		padding-top: 10px;
-	}
+    html {
+        height: 100%
+    }
+    body {
+        height: 100%;
+    }
+    .main {
+        flex-direction: row;
+        height: calc(100% - 50px);
+    }
+    .info {
+        flex: 30px;
+        height: auto;
+    }
+    p {
+        padding-top: 10px;
+    }
 }
 
-  
+@media (min-width: 1000px) {
+    html {
+        height: 100%
+    }
+    body {
+        height: 100%;
+    }
+    .main {
+        flex-direction: row;
+        height: calc(100% - 50px);
+        padding-right: 15%;
+        padding-left: 10%;
+    }
+    .info {
+        flex: 30px;
+        height: auto;
+    }
+    p {
+        padding-top: 10px;
+    }
+}
