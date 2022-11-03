@@ -1,55 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 1</title>
-    <link rel="stylesheet" media="screen" href="css/style.css">
-    <link rel="stylesheet" media="screen" href="css/reset.css">
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" media="screen" href="css/reset.css" />
     <script src="js/site.js" async></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main">
-        <div class="info">
-            <h1 class="webTitle">Flimb Fitness</h1>
-            <p id="content">CONFIDENT OF BEING THE FIRST FITNESS BRAND WITH THE WELL HEALTH-SAFETY RATING</p>
+      <div class="info">
+        <h1 class="webTitle">Flimb Fitness</h1>
+        <p id="content">
+          CONFIDENT OF BEING THE FIRST FITNESS BRAND WITH THE WELL HEALTH-SAFETY
+          RATING
+        </p>
+      </div>
+      <form
+        method="get"
+        action="#null"
+        name="registerForm"
+        autocomplete="”on”"
+        onsubmit="return correctForm()"
+      >
+        <div class="box">
+          <p id="register">Register Now!</p>
+          <div class="firstNameInput">
+            <label>
+              <input
+                type="text"
+                id="firstNameInput"
+                name="firstname"
+                placeholder="First Name"
+              />
+            </label>
+          </div>
+          <div class="lastNameInput">
+            <label>
+              <input
+                type="text"
+                id="lastNameInput"
+                name="lastname"
+                placeholder="Last Name"
+              />
+            </label>
+          </div>
+          <div class="emailInput">
+            <label>
+              <input
+                type="text"
+                id="emailInput"
+                name="email"
+                placeholder="E-mail Address"
+              />
+            </label>
+          </div>
+          <div class="phoneInput">
+            <label>
+              <input
+                type="text"
+                id="phoneInput"
+                name="phone"
+                placeholder="Phone Number"
+              />
+            </label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="checkbox" />
+            <label>I agree to the Privacy Policy</label>
+          </div>
+          <div>
+            <button type="submit" class="btn-1">Submit</button>
+          </div>
         </div>
-        <form method="get" action="#null" name="registerForm" autocomplete=”on” onsubmit="return correctForm()">
-            <div class="box">
-                <p id="register">Register Now!</p>
-                <div class="firstNameInput">
-                    <label>
-              <input type="text" id="firstNameInput" name="firstname" placeholder="First Name">
-            </label>
-                </div>
-                <div class="lastNameInput">
-                    <label>
-            <input type="text" id="lastNameInput" name="lastname" placeholder="Last Name">
-        </label>
-                </div>
-                <div class="emailInput">
-                    <label>
-                <input type="text" id="emailInput" name="email" placeholder="E-mail Address">
-            </label>
-                </div>
-                <div class="phoneInput">
-                    <label>
-            <input type="text" id="phoneInput" name="phone" placeholder="Phone Number">
-          </label>
-                </div>
-                <div class="check">
-                    <input type="checkbox" name="checkbox">
-                    <label>I agree to the Privacy Policy</label>
-                </div>
-                <div>
-                    <button type="submit" class="btn-1">Submit</button>
-                </div>
-            </div>
-        </form>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
